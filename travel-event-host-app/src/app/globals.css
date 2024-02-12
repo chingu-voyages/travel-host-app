@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap');
+
+/* Remember to add any global colors or color name changes the MaterialUI theme definitions */
+:root {
+  margin: 0;
+  --background-color-light-purple: #e4d9ff;
+  --primary-color-dark-blue: #273469;
+  --primary-color-darker-blue: #242562;
+  --secondary-color-dark-black: #30343f;
+  --third-color-ice-light: #fafaff;
+  --color-light-night-blue: #3d37f1;
+  --third-color-light-black: #424755;
+  --color-charcoal: #272727;
+  --light-indigo: #636EA9;
+  --grey-disabled: #8b93a7;
+}
+
+body {
+  color: var(--third-color-ice-light);
+  background: var(--background-color-light-purple);
+}
+.button1 {
+  background-color: var(--primary-color-dark-blue);
+  min-width: 11.375em;
+  min-height: 3.25em;
+}
+@media only screen and (max-width: 610px) {
+  .button1 {
+    min-width: 8em;
+  }
+}
+.scrollbar1::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar1::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color-dark-black);
+}
+
+.scrollbar1::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color-dark-blue);
+}
+.scrollbar1::-webkit-scrollbar-track {
+  background-color: var(--third-color-ice-light); 
+}
